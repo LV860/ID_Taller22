@@ -101,10 +101,10 @@ class ServidorCentral:
             if sensor_id in self.sensor_temp:
                 self.sensor_temp[sensor_id] = temp
                 
-                print(f"Sensor ID {sensor_id} actualizado con la temperatura: {temp}")
+                print(f"Sensor temperatura ID {sensor_id} actualizado con la temperatura: {temp}")
                 
             else:
-                print(f"Sensor ID {sensor_id} no encontrado.")
+                print(f"Sensor temperatura ID {sensor_id} no encontrado.")
         except ValueError as e:
             print(f"Ocurrió un error al procesar el mensaje: {e}")
     
@@ -124,10 +124,10 @@ class ServidorCentral:
             if sensor_id in self.sensor_hum:
                 self.sensor_hum[sensor_id] = hum
                 
-                print(f"Sensor ID {sensor_id} actualizado con la humedad: {hum}")
+                print(f"Sensor humedad ID {sensor_id} actualizado con la humedad: {hum}")
                 
             else:
-                print(f"Sensor ID {sensor_id} no encontrado.")
+                print(f"Sensor humedad ID {sensor_id} no encontrado.")
         except ValueError as e:
             print(f"Ocurrió un error al procesar el mensaje: {e}")
 
