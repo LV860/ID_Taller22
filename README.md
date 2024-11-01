@@ -82,6 +82,3 @@
     sudo tail -f /var/log/mosquitto/mosquitto.log
     ```
 
-## Conclusión
-
-Ahora tienes configurado un entorno virtual de Python y un broker MQTT utilizando Mosquitto. Puedes empezar a desarrollar aplicaciones que se comuniquen utilizando MQTT.
