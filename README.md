@@ -1,5 +1,13 @@
 # ID_Taller22
 
+### Integrantes del Equipo
+
+1. Leonardo Velázquez Colin
+2. María José Cárdenas Machaca
+3. Oscar Rodríguez Gómez 
+4. Pablo Escobar Gómez
+
+
 # Guía de Instalación para el Entorno Virtual y MQTT
 
 ## Instalaciones para usar ambiente virtual
