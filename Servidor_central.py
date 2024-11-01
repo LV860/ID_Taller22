@@ -1,10 +1,10 @@
 import paho.mqtt.client as mqtt
 import time
 import threading
-import math
+
 import signal
 import sys
-import zmq  
+ 
 
 class ServidorCentral:
     def __init__(self):
@@ -113,7 +113,7 @@ class ServidorCentral:
         sensor_id, hum_inicial = mensaje.split(", Humedad Inicial: ")
         sensor_id = sensor_id.split(":")[1].strip()
         print(f"Se ha registrado el sensor de humedad con ID {sensor_id} con medida ({hum_inicial})")
-        self.sensor_temp[sensor_id] = [hum_inicial]
+        self.sensor_hum[sensor_id] = [hum_inicial]
         
 
     def act_sensorHum(self, mensaje):
