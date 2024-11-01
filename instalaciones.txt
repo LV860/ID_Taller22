@@ -1,0 +1,39 @@
+# Instalaciones para usar ambiente virtual
+
+    sudo apt update
+    sudo apt install python3-venv
+
+    ## Crear el entorno virtual
+    python3 -m venv mi_entorno
+
+    ## Activar el ambiente virtual
+    source mi_entorno/bin/activate
+
+
+# Instalar mqtt
+
+    pip install paho-mqtt==1.5.1
+
+
+# Instalar el broker de mosquitto
+
+    sudo apt update
+    sudo apt-get install mosquitto mosquitto-clients
+
+    ## Habilitar mosquitto
+    sudo systemctl enable mosquitto
+    sudo systemctl start mosquitto
+
+    ## Verificar el estado de mosquitto
+    sudo systemctl status mosquitto
+
+    ## Ver los logs de mosquitto
+    sudo tail -f /var/log/mosquitto/mosquitto.log
+
+    ## Habilitar mosquitto de forma online
+    sudo nano /etc/mosquitto/mosquitto.conf
+
+    listener 1883 0.0.0.0
+    allow_anonymous true    
+
+
